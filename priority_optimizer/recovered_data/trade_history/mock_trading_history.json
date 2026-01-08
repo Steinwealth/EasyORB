@@ -1,0 +1,19 @@
+{
+  "total_pnl": 0.0,
+  "total_trades": 0,
+  "winning_trades": 0,
+  "losing_trades": 0,
+  "account_balance": 1000.0,
+  "starting_balance": 1000.0,
+  "weekly_stats": {
+    "positions_opened": 0,
+    "positions_closed": 0,
+    "total_pnl": 0.0,
+    "winning_trades": 0,
+    "losing_trades": 0,
+    "best_trade": 0.0,
+    "worst_trade": 0.0,
+    "week_start_date": "2026-01-05T00:00:00"
+  },
+  "closed_trades": []
+}

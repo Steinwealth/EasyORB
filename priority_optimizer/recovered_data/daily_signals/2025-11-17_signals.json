@@ -1,0 +1,54 @@
+{
+  "date": "2025-11-17",
+  "time": "15:30:15",
+  "total_signals": 3,
+  "executed_count": 3,
+  "filtered_count": 0,
+  "signals": [
+    {
+      "symbol": "IONX",
+      "rank": 1,
+      "priority_score": 0,
+      "confidence": 0.95,
+      "orb_range_pct": 0,
+      "orb_volume_ratio": 0,
+      "exec_volume_ratio": 0,
+      "price": 61.06,
+      "orb_high": 0,
+      "orb_low": 0,
+      "leverage": "",
+      "category": "",
+      "executed": true
+    },
+    {
+      "symbol": "IONL",
+      "rank": 2,
+      "priority_score": 0,
+      "confidence": 0.9351856121743147,
+      "orb_range_pct": 0,
+      "orb_volume_ratio": 0,
+      "exec_volume_ratio": 0,
+      "price": 44.39,
+      "orb_high": 0,
+      "orb_low": 0,
+      "leverage": "",
+      "category": "",
+      "executed": true
+    },
+    {
+      "symbol": "OKLL",
+      "rank": 3,
+      "priority_score": 0,
+      "confidence": 0.8931682049695787,
+      "orb_range_pct": 0,
+      "orb_volume_ratio": 0,
+      "exec_volume_ratio": 0,
+      "price": 38.885,
+      "orb_high": 0,
+      "orb_low": 0,
+      "leverage": "",
+      "category": "",
+      "executed": true
+    }
+  ]
+}

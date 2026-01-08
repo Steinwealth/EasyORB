@@ -1,0 +1,190 @@
+{
+  "date": "2026-01-07",
+  "metadata": {
+    "account_value": 1000.0,
+    "revision": "easy-etrade-strategy-00198-j4s",
+    "service": "easy-etrade-strategy",
+    "total_scanned": 147
+  },
+  "mode": "DEMO",
+  "signal_count": 16,
+  "signals": [
+    {
+      "confidence": 0.7161773816129827,
+      "inverse_symbol": null,
+      "original_symbol": "SPXS",
+      "position_size_pct": 30.0,
+      "price": 34.115,
+      "reasoning": "Bullish SO: Price 0.16% above ORB high with GREEN volume",
+      "side": "long",
+      "signal_type": "SO",
+      "symbol": "SPXS"
+    },
+    {
+      "confidence": 0.718856065367694,
+      "inverse_symbol": null,
+      "original_symbol": "SPXU",
+      "position_size_pct": 30.0,
+      "price": 47.82,
+      "reasoning": "Bullish SO: Price 0.19% above ORB high with GREEN volume",
+      "side": "long",
+      "signal_type": "SO",
+      "symbol": "SPXU"
+    },
+    {
+      "confidence": 0.8424209987925058,
+      "inverse_symbol": null,
+      "original_symbol": "SRTY",
+      "position_size_pct": 35.0,
+      "price": 38.47,
+      "reasoning": "Bullish SO: Price 1.42% above ORB high with GREEN volume",
+      "side": "long",
+      "signal_type": "SO",
+      "symbol": "SRTY"
+    },
+    {
+      "confidence": 0.8339285714285711,
+      "inverse_symbol": null,
+      "original_symbol": "TZA",
+      "position_size_pct": 35.0,
+      "price": 6.81,
+      "reasoning": "Bullish SO: Price 1.34% above ORB high with GREEN volume",
+      "side": "long",
+      "signal_type": "SO",
+      "symbol": "TZA"
+    },
+    {
+      "confidence": 0.7105026256564131,
+      "inverse_symbol": null,
+      "original_symbol": "SDS",
+      "position_size_pct": 30.0,
+      "price": 66.72,
+      "reasoning": "Bullish SO: Price 0.11% above ORB high with GREEN volume",
+      "side": "long",
+      "signal_type": "SO",
+      "symbol": "SDS"
+    },
+    {
+      "confidence": 0.7924693874113623,
+      "inverse_symbol": null,
+      "original_symbol": "TWM",
+      "position_size_pct": 30.0,
+      "price": 29.96,
+      "reasoning": "Bullish SO: Price 0.92% above ORB high with GREEN volume",
+      "side": "long",
+      "signal_type": "SO",
+      "symbol": "TWM"
+    },
+    {
+      "confidence": 0.8294718909710388,
+      "inverse_symbol": null,
+      "original_symbol": "SDOW",
+      "position_size_pct": 35.0,
+      "price": 29.73,
+      "reasoning": "Bullish SO: Price 1.29% above ORB high with GREEN volume",
+      "side": "long",
+      "signal_type": "SO",
+      "symbol": "SDOW"
+    },
+    {
+      "confidence": 0.7882670426667078,
+      "inverse_symbol": null,
+      "original_symbol": "DXD",
+      "position_size_pct": 30.0,
+      "price": 19.5326,
+      "reasoning": "Bullish SO: Price 0.88% above ORB high with GREEN volume",
+      "side": "long",
+      "signal_type": "SO",
+      "symbol": "DXD"
+    },
+    {
+      "confidence": 0.7278834888700361,
+      "inverse_symbol": null,
+      "original_symbol": "TECL",
+      "position_size_pct": 30.0,
+      "price": 124.1101,
+      "reasoning": "Bullish SO: Price 0.28% above ORB high with GREEN volume",
+      "side": "long",
+      "signal_type": "SO",
+      "symbol": "TECL"
+    },
+    {
+      "confidence": 0.9127067982760999,
+      "inverse_symbol": null,
+      "original_symbol": "FAZ",
+      "position_size_pct": 35.0,
+      "price": 36.73,
+      "reasoning": "Bullish SO: Price 2.13% above ORB high with GREEN volume",
+      "side": "long",
+      "signal_type": "SO",
+      "symbol": "FAZ"
+    },
+    {
+      "confidence": 0.8150519978106187,
+      "inverse_symbol": null,
+      "original_symbol": "DRIP",
+      "position_size_pct": 35.0,
+      "price": 9.2401,
+      "reasoning": "Bullish SO: Price 1.15% above ORB high with GREEN volume",
+      "side": "long",
+      "signal_type": "SO",
+      "symbol": "DRIP"
+    },
+    {
+      "confidence": 0.883123877917414,
+      "inverse_symbol": null,
+      "original_symbol": "USD",
+      "position_size_pct": 35.0,
+      "price": 56.72,
+      "reasoning": "Bullish SO: Price 1.83% above ORB high with GREEN volume",
+      "side": "long",
+      "signal_type": "SO",
+      "symbol": "USD"
+    },
+    {
+      "confidence": 0.9231845436375739,
+      "inverse_symbol": null,
+      "original_symbol": "NVDL",
+      "position_size_pct": 35.0,
+      "price": 92.07,
+      "reasoning": "Bullish SO: Price 2.23% above ORB high with GREEN volume",
+      "side": "long",
+      "signal_type": "SO",
+      "symbol": "NVDL"
+    },
+    {
+      "confidence": 0.9400685910260063,
+      "inverse_symbol": null,
+      "original_symbol": "NVDX",
+      "position_size_pct": 35.0,
+      "price": 17.915,
+      "reasoning": "Bullish SO: Price 2.40% above ORB high with GREEN volume",
+      "side": "long",
+      "signal_type": "SO",
+      "symbol": "NVDX"
+    },
+    {
+      "confidence": 0.8282051282051281,
+      "inverse_symbol": null,
+      "original_symbol": "METD",
+      "position_size_pct": 35.0,
+      "price": 16.195,
+      "reasoning": "Bullish SO: Price 1.28% above ORB high with GREEN volume",
+      "side": "long",
+      "signal_type": "SO",
+      "symbol": "METD"
+    },
+    {
+      "confidence": 0.95,
+      "inverse_symbol": null,
+      "original_symbol": "AVGU",
+      "position_size_pct": 35.0,
+      "price": 34.46,
+      "reasoning": "Bullish SO: Price 3.64% above ORB high with GREEN volume",
+      "side": "long",
+      "signal_type": "SO",
+      "symbol": "AVGU"
+    }
+  ],
+  "total_scanned": 147
+}

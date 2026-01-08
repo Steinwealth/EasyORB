@@ -1,0 +1,18 @@
+{
+  "recovery_date": "2026-01-06T16:16:54.793514",
+  "summary": {
+    "signals": 21,
+    "comprehensive": 0,
+    "trade_history": [],
+    "date_range": {
+      "start": "2025-11-17",
+      "end": "2026-01-05"
+    }
+  },
+  "downloaded": {
+    "signals": 21,
+    "comprehensive": 0,
+    "trade_history": true
+  },
+  "output_directory": "/Users/eisenstein/Easy Co/1. Easy Trading Software/0. Strategies and Automations/1. The Easy ORB Strategy/priority_optimizer/recovered_data"
+}
