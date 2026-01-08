@@ -1,0 +1,148 @@
+symbol,leverage,category,underlying,avg_pnl,win_rate,notes
+QQQ,1x,index,Nasdaq-100,0.00,0.0,ProShares Nasdaq-100 ETF (0DTE target)
+SPY,1x,index,S&P 500,0.00,0.0,SPDR S&P 500 ETF (0DTE target)
+SPYU,4x,index,S&P 500,0.00,0.0,BMO 4x S&P 500 bull
+SQQQ,3x,index,Nasdaq-100,17.73,100.0,ProShares 3x Nasdaq short
+TQQQ,3x,index,Nasdaq-100,17.73,100.0,ProShares 3x Nasdaq bull
+SPXS,3x,index,S&P 500,10.82,75.0,Direxion 3x S&P 500 short
+SPXU,3x,index,S&P 500,14.31,66.7,ProShares 3x S&P 500 short
+SPXL,3x,index,S&P 500,10.82,75.0,Direxion 3x S&P 500 bull
+UPRO,3x,index,S&P 500,10.82,75.0,ProShares 3x S&P 500 bull
+SRTY,3x,index,Russell 2000,18.26,71.4,ProShares 3x Russell 2000 short
+URTY,3x,index,Russell 2000,18.26,71.4,ProShares 3x Russell 2000 bull
+TZA,3x,index,Small Cap,15.64,71.4,Direxion 3x Small Cap short
+TNA,3x,index,Small Cap,15.64,71.4,Direxion 3x Small Cap bull
+SMDD,3x,index,MidCap,0.00,0.0,ProShares 3x MidCap short
+UMDD,3x,index,MidCap,0.00,0.0,ProShares 3x MidCap bull
+QID,2x,index,Nasdaq-100,13.12,100.0,ProShares 2x Nasdaq short
+QLD,2x,index,Nasdaq-100,13.12,100.0,ProShares 2x Nasdaq bull
+SDS,2x,index,S&P 500,4.47,62.5,ProShares 2x S&P 500 short
+SSO,2x,index,S&P 500,4.47,62.5,ProShares 2x S&P 500 bull
+TWM,2x,index,Russell 2000,11.65,66.7,ProShares 2x Russell 2000 short
+UWM,2x,index,Russell 2000,11.65,66.7,ProShares 2x Russell 2000 bull
+SDOW,2x,index,Dow Jones,4.24,58.3,ProShares 2x Dow Jones short
+UDOW,2x,index,Dow Jones,4.24,58.3,ProShares 2x Dow Jones bull
+DXD,2x,index,Dow Jones,3.66,57.1,ProShares 2x Dow Jones short alt
+DDM,2x,index,Dow Jones,3.66,57.1,ProShares 2x Dow Jones bull alt
+SDD,2x,index,SmallCap,0.00,0.0,ProShares 2x SmallCap short
+SAA,2x,index,SmallCap,0.00,0.0,ProShares 2x SmallCap bull
+MZZ,2x,index,MidCap,0.00,0.0,ProShares 2x MidCap short
+MVV,2x,index,MidCap,0.00,0.0,ProShares 2x MidCap bull
+SOXS,3x,sector,Semiconductors,38.72,100.0,Direxion 3x Semiconductor short
+SOXL,3x,sector,Semiconductors,38.72,100.0,Direxion 3x Semiconductor bull
+TECS,3x,sector,Technology,15.73,66.7,Direxion 3x Technology short
+TECL,3x,sector,Technology,15.73,66.7,Direxion 3x Technology bull
+FAZ,3x,sector,Financials,9.60,60.0,Direxion 3x Financial short
+FAS,3x,sector,Financials,9.60,60.0,Direxion 3x Financial bull
+DRIP,3x,sector,Oil & Gas,7.87,60.0,Direxion 3x Oil & Gas short
+GUSH,3x,sector,Oil & Gas,7.87,60.0,Direxion 3x Oil & Gas bull
+LABD,3x,sector,Biotech,5.63,66.7,Direxion 3x Biotech short
+LABU,3x,sector,Biotech,5.63,66.7,Direxion 3x Biotech bull
+FNGD,3x,tech,FANG+,5.35,50.0,MicroSectors 3x FANG+ short
+FNGU,3x,tech,FANG+,5.35,50.0,MicroSectors 3x FANG+ bull
+WEBS,3x,sector,Internet,4.10,50.0,Direxion 3x Internet short
+WEBL,3x,sector,Internet,4.10,50.0,Direxion 3x Internet bull
+SSG,2x,sector,Semiconductors,0.00,0.0,ProShares 2x Semiconductor short
+USD,2x,sector,Semiconductors,0.00,0.0,ProShares 2x Semiconductor bull
+REW,2x,sector,Technology,21.25,100.0,ProShares 2x Technology short
+ROM,2x,sector,Technology,21.25,100.0,ProShares 2x Technology bull
+SKF,2x,sector,Financials,0.00,0.0,ProShares 2x Financial short
+UYG,2x,sector,Financials,0.00,0.0,ProShares 2x Financial bull
+NVDD,2x,stock,NVIDIA,18.43,100.0,GraniteShares 2x NVIDIA short
+NVDL,2x,stock,NVIDIA,18.43,100.0,GraniteShares 2x NVIDIA bull
+NVDQ,2x,stock,NVIDIA,0.00,0.0,T-Rex 2x NVIDIA short
+NVDX,2x,stock,NVIDIA,0.00,0.0,T-Rex 2x NVIDIA bull
+TSLS,2x,stock,Tesla,18.50,100.0,Direxion 2x Tesla short
+TSLL,2x,stock,Tesla,18.50,100.0,Direxion 2x Tesla bull
+TSDD,2x,stock,Tesla,0.00,0.0,GraniteShares 2x Tesla short
+TDSA,2x,stock,Tesla,0.00,0.0,GraniteShares 2x Tesla bull
+MUD,2x,stock,Micron,23.85,75.0,Defiance 2x Micron short
+MUU,2x,stock,Micron,23.85,75.0,Defiance 2x Micron bull
+MULL,2x,stock,Micron,0.00,0.0,T-Rex 2x Micron bull
+METD,2x,stock,Meta,13.23,80.0,T-Rex 2x Meta short
+METU,2x,stock,Meta,13.23,80.0,T-Rex 2x Meta bull
+AMDD,2x,stock,AMD,3.86,60.0,GraniteShares 2x AMD short
+AMUU,2x,stock,AMD,3.86,60.0,GraniteShares 2x AMD bull
+AMDL,2x,stock,AMD,0.00,0.0,Direxion 2x AMD bull
+AMDG,2x,stock,AMD,0.00,0.0,T-Rex 2x AMD bull
+AVGS,2x,stock,Broadcom,10.17,75.0,GraniteShares 2x Broadcom short
+AVGU,2x,stock,Broadcom,10.17,75.0,GraniteShares 2x Broadcom bull
+MSFD,2x,stock,Microsoft,3.75,62.5,GraniteShares 2x Microsoft short
+MSFU,2x,stock,Microsoft,3.75,62.5,GraniteShares 2x Microsoft bull
+PLTD,2x,stock,Palantir,5.31,60.0,Defiance 2x Palantir short
+PLTU,2x,stock,Palantir,5.31,60.0,Defiance 2x Palantir bull
+PLTZ,2x,stock,Palantir,0.00,0.0,T-Rex 2x Palantir short
+PTIR,2x,stock,Palantir,0.00,0.0,T-Rex 2x Palantir bull
+MSTZ,2x,stock,MSTR,0.00,0.0,Defiance 2x MicroStrategy short
+MSTU,2x,stock,MSTR,0.00,0.0,Defiance 2x MicroStrategy bull
+SMST,2x,stock,MSTR,0.00,0.0,T-Rex 2x MicroStrategy short
+MSTX,2x,stock,MSTR,0.00,0.0,T-Rex 2x MicroStrategy bull
+MSDD,2x,stock,MSTR,0.00,0.0,GraniteShares 2x MSTR short
+MSDL,2x,stock,MSTR,0.00,0.0,GraniteShares 2x MSTR bull
+PALD,2x,stock,Palo Alto,4.53,100.0,Defiance 2x Palo Alto short
+PALU,2x,stock,Palo Alto,4.53,100.0,Defiance 2x Palo Alto bull
+RGTZ,2x,stock,Rigetti,0.00,0.0,Defiance 2x Rigetti short
+RGTX,2x,stock,Rigetti,0.00,0.0,Defiance 2x Rigetti bull
+RGTU,2x,stock,Rigetti,0.00,0.0,Tradr 2x Rigetti bull
+IONZ,2x,stock,IONQ,0.00,0.0,Defiance 2x IONQ short
+IONX,2x,stock,IONQ,0.00,0.0,Defiance 2x IONQ bull
+IOND,2x,stock,IONQ,0.00,0.0,GraniteShares 2x IONQ short
+IONL,2x,stock,IONQ,0.00,0.0,GraniteShares 2x IONQ bull
+QBTZ,2x,stock,QBTS,0.00,0.0,Defiance 2x QBTS short
+QBTX,2x,stock,QBTS,0.00,0.0,Tradr 2x QBTS bull
+OKLL,2x,stock,OKLO,0.00,0.0,Defiance 2x OKLO bull
+QCMD,1x,stock,Qualcomm,0.00,0.0,Direxion 1x Qualcomm short
+QCMU,2x,stock,Qualcomm,0.00,0.0,Direxion 2x Qualcomm bull
+QCML,2x,stock,Qualcomm,0.00,0.0,GraniteShares 2x Qualcomm bull
+CSCS,1x,stock,Cisco,0.00,0.0,Direxion 1x Cisco short
+CSCL,2x,stock,Cisco,0.00,0.0,Direxion 2x Cisco bull
+ELIS,1x,stock,Eli Lilly,0.00,0.0,Direxion 1x Eli Lilly short
+ELIL,2x,stock,Eli Lilly,0.00,0.0,Direxion 2x Eli Lilly bull
+LLYZ,2x,stock,Eli Lilly,0.00,0.0,Defiance 2x Eli Lilly short
+LLYX,2x,stock,Eli Lilly,0.00,0.0,Defiance 2x Eli Lilly bull
+NOWI,2x,stock,ServiceNow,0.00,0.0,GraniteShares 2x ServiceNow short
+NOWL,2x,stock,ServiceNow,0.00,0.0,GraniteShares 2x ServiceNow bull
+KMII,2x,stock,MercadoLibre,0.00,0.0,KraneShares 2x MercadoLibre short
+KMLI,2x,stock,MercadoLibre,0.00,0.0,KraneShares 2x MercadoLibre bull
+NEBX,2x,stock,Nebius,0.00,0.0,Defiance 2x Nebius bull
+NBIL,2x,stock,Nebius,0.00,0.0,GraniteShares 2x Nebius bull
+QSU,2x,stock,QuantumScape,0.00,0.0,Defiance 2x QuantumScape bull
+IRE,2x,stock,IREN,0.00,0.0,Defiance 2x IREN bull
+DLLL,2x,stock,Dell,0.00,0.0,Defiance 2x Dell bull
+INTW,2x,stock,Intel,0.00,0.0,T-Rex 2x Intel bull
+MVLL,2x,stock,Marvell,0.00,0.0,T-Rex 2x Marvell bull
+VRTL,2x,stock,VRT,0.00,0.0,GraniteShares 2x Vertiv bull
+MRAL,2x,stock,MARA,0.00,0.0,GraniteShares 2x Marathon Digital bull
+UBRL,2x,stock,Uber,0.00,0.0,GraniteShares 2x Uber bull
+AALG,2x,stock,AAL,0.00,0.0,Leverage Shares 2x American Airlines bull
+CRWU,2x,stock,CRWV,0.00,0.0,T-Rex 2x CoreWeave bull
+CWVX,2x,stock,CRWV,0.00,0.0,Tradr 2x CoreWeave bull
+HOOX,2x,stock,HOOD,0.00,0.0,Defiance 2x Robinhood bull
+OPEX,2x,stock,OPEN,0.00,0.0,Tradr 2x Opendoor bull
+FIGG,2x,stock,Figma,0.00,0.0,Leverage Shares 2x Figma bull
+WULX,2x,stock,TeraWulf,0.00,0.0,Tradr 2x TeraWulf bull
+BTCZ,2x,crypto,Bitcoin,0.00,0.0,T-Rex 2x Bitcoin short inverse
+BITX,2x,crypto,Bitcoin,5.93,66.7,Volatility Shares 2x Bitcoin bull
+BITU,2x,crypto,Bitcoin,5.93,66.7,ProShares 2x Bitcoin bull
+SBIT,2x,crypto,Bitcoin,4.91,66.7,ProShares 2x Bitcoin short inverse
+BTCL,2x,crypto,Bitcoin,0.00,0.0,T-Rex 2x Bitcoin bull
+ETHD,2x,crypto,Ethereum,3.75,66.7,ProShares 2x Ethereum short
+ETHT,2x,crypto,Ethereum,3.75,66.7,ProShares 2x Ethereum bull
+ETQ,2x,crypto,Ethereum,0.00,0.0,T-Rex 2x Ethereum short inverse
+ETU,2x,crypto,Ethereum,0.00,0.0,T-Rex 2x Ethereum bull
+ETHU,2x,crypto,Ethereum,0.00,0.0,Volatility Shares 2x Ethereum bull
+UXRP,2x,crypto,XRP,0.00,0.0,ProShares 2x XRP bull
+XRPT,2x,crypto,XRP,0.00,0.0,Volatility Shares 2x XRP bull
+SOLZ,1x,crypto,Solana,0.00,0.0,Volatility Shares 1x Solana bull
+SOLT,2x,crypto,Solana,0.00,0.0,Volatility Shares 2x Solana bull
+CONI,2x,crypto,Coinbase,0.00,0.0,GraniteShares 2x Coinbase short
+CONL,2x,crypto,Coinbase,0.00,0.0,GraniteShares 2x Coinbase bull
+COIA,2x,crypto,Coinbase,0.00,0.0,ProShares 2x Coinbase bull
+CRCA,2x,crypto,Circle,0.00,0.0,ProShares 2x Circle bull
+CCUP,2x,crypto,Circle,0.00,0.0,T-Rex 2x Circle bull
+DUST,2x,commodity,Gold Miners,5.23,66.7,Direxion 2x Gold Miners short
+NUGT,2x,commodity,Gold Miners,5.23,66.7,Direxion 2x Gold Miners bull
+WHTX,2x,commodity,Wheat,0.00,0.0,Volatility Shares 2x Wheat bull
+CORX,2x,commodity,Corn,0.00,0.0,Volatility Shares 2x Corn bull
+SVIX,1x,volatility,VIX,0.00,0.0,Volatility Shares 1x VIX short
+UVIX,2x,volatility,VIX,0.00,0.0,Volatility Shares 2x VIX bull

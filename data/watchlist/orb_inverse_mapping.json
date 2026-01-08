@@ -1,0 +1,398 @@
+{
+  "orb_strategy_mapping": {
+    "description": "Complete inverse ETF mapping for ORB strategy - leveraged funds only",
+    "last_updated": "2025-10-11",
+    "strategy": "Focus on leveraged funds, skip 1x base funds",
+    "total_pairs": 48,
+    "total_symbols": 96,
+    
+    "3x_leverage_pairs": {
+      "index_etfs": {
+        "TQQQ": {
+          "bear_etf": "SQQQ",
+          "underlying": "Nasdaq-100",
+          "category": "index",
+          "leverage": "3x"
+        },
+        "UPRO": {
+          "bear_etf": "SPXU",
+          "underlying": "S&P 500",
+          "category": "index",
+          "leverage": "3x"
+        },
+        "SPXL": {
+          "bear_etf": "SPXS",
+          "underlying": "S&P 500",
+          "category": "index",
+          "leverage": "3x"
+        },
+        "SPYU": {
+          "bear_etf": "SPXS",
+          "underlying": "S&P 500",
+          "category": "index",
+          "leverage": "4x/3x"
+        },
+        "URTY": {
+          "bear_etf": "SRTY",
+          "underlying": "Russell 2000",
+          "category": "index",
+          "leverage": "3x"
+        },
+        "UDOW": {
+          "bear_etf": "SDOW",
+          "underlying": "Dow Jones",
+          "category": "index",
+          "leverage": "3x"
+        },
+        "TNA": {
+          "bear_etf": "TZA",
+          "underlying": "Small Cap",
+          "category": "index",
+          "leverage": "3x"
+        }
+      },
+      "sector_etfs": {
+        "SOXL": {
+          "bear_etf": "SOXS",
+          "underlying": "Semiconductors",
+          "category": "tech",
+          "leverage": "3x"
+        },
+        "TECL": {
+          "bear_etf": "TECS",
+          "underlying": "Technology",
+          "category": "sector",
+          "leverage": "3x"
+        },
+        "FAS": {
+          "bear_etf": "FAZ",
+          "underlying": "Financials",
+          "category": "sector",
+          "leverage": "3x"
+        },
+        "FNGU": {
+          "bear_etf": "FNGD",
+          "underlying": "FANG+ Stocks",
+          "category": "tech",
+          "leverage": "3x"
+        },
+        "LABU": {
+          "bear_etf": "LABD",
+          "underlying": "Biotech",
+          "category": "sector",
+          "leverage": "3x"
+        },
+        "GUSH": {
+          "bear_etf": "DRIP",
+          "underlying": "Oil & Gas",
+          "category": "sector",
+          "leverage": "3x"
+        },
+        "WEBL": {
+          "bear_etf": "WEBS",
+          "underlying": "Internet",
+          "category": "sector",
+          "leverage": "3x"
+        },
+        "DRN": {
+          "bear_etf": "DRV",
+          "underlying": "Real Estate",
+          "category": "sector",
+          "leverage": "3x"
+        }
+      },
+      "commodity_bond_etfs": {
+        "TMF": {
+          "bear_etf": "TMV",
+          "underlying": "20+ Year Treasury",
+          "category": "bond",
+          "leverage": "3x"
+        },
+        "GDXU": {
+          "bear_etf": "GDXD",
+          "underlying": "Gold Miners",
+          "category": "commodity",
+          "leverage": "3x"
+        }
+      }
+    },
+    
+    "2x_leverage_pairs": {
+      "index_etfs": {
+        "QLD": {
+          "bear_etf": "QID",
+          "underlying": "Nasdaq-100",
+          "category": "index",
+          "leverage": "2x"
+        },
+        "SSO": {
+          "bear_etf": "SDS",
+          "underlying": "S&P 500",
+          "category": "index",
+          "leverage": "2x"
+        },
+        "DDM": {
+          "bear_etf": "DXD",
+          "underlying": "Dow Jones",
+          "category": "index",
+          "leverage": "2x"
+        },
+        "UWM": {
+          "bear_etf": "TWM",
+          "underlying": "Russell 2000",
+          "category": "index",
+          "leverage": "2x"
+        }
+      },
+      "sector_etfs": {
+        "ERX": {
+          "bear_etf": "ERY",
+          "underlying": "Energy",
+          "category": "sector",
+          "leverage": "2x"
+        },
+        "ROM": {
+          "bear_etf": "REW",
+          "underlying": "Technology",
+          "category": "sector",
+          "leverage": "2x"
+        },
+        "URE": {
+          "bear_etf": "SRS",
+          "underlying": "Real Estate",
+          "category": "sector",
+          "leverage": "2x"
+        }
+      },
+      "individual_stocks": {
+        "TSLL": {
+          "bear_etf": "TSLS",
+          "underlying": "Tesla",
+          "category": "stock",
+          "leverage": "2x"
+        },
+        "NVDL": {
+          "bear_etf": "NVDD",
+          "underlying": "NVIDIA",
+          "category": "stock",
+          "leverage": "2x"
+        },
+        "AMUU": {
+          "bear_etf": "AMDD",
+          "underlying": "AMD",
+          "category": "stock",
+          "leverage": "2x"
+        },
+        "MSFU": {
+          "bear_etf": "MSFD",
+          "underlying": "Microsoft",
+          "category": "stock",
+          "leverage": "2x"
+        },
+        "METU": {
+          "bear_etf": "METD",
+          "underlying": "Meta",
+          "category": "stock",
+          "leverage": "2x"
+        },
+        "SHPU": {
+          "bear_etf": "SHPD",
+          "underlying": "Shopify",
+          "category": "stock",
+          "leverage": "2x"
+        },
+        "QCMU": {
+          "bear_etf": "QCMD",
+          "underlying": "Qualcomm",
+          "category": "stock",
+          "leverage": "2x"
+        },
+        "MUU": {
+          "bear_etf": "MUD",
+          "underlying": "Micron",
+          "category": "stock",
+          "leverage": "2x"
+        },
+        "PLTU": {
+          "bear_etf": "PLTD",
+          "underlying": "Palantir",
+          "category": "stock",
+          "leverage": "2x"
+        },
+        "PALU": {
+          "bear_etf": "PALD",
+          "underlying": "Palo Alto Networks",
+          "category": "stock",
+          "leverage": "2x"
+        },
+        "LMTL": {
+          "bear_etf": "LMTS",
+          "underlying": "Lockheed Martin",
+          "category": "stock",
+          "leverage": "2x"
+        },
+        "ELIL": {
+          "bear_etf": "ELIS",
+          "underlying": "Eli Lilly",
+          "category": "stock",
+          "leverage": "2x"
+        },
+        "GGLL": {
+          "bear_etf": "GGLS",
+          "underlying": "Google",
+          "category": "stock",
+          "leverage": "2x"
+        },
+        "AVL": {
+          "bear_etf": "AVS",
+          "underlying": "Broadcom",
+          "category": "stock",
+          "leverage": "2x"
+        }
+      },
+      "commodity_crypto_etfs": {
+        "NUGT": {
+          "bear_etf": "DUST",
+          "underlying": "Gold Miners",
+          "category": "commodity",
+          "leverage": "2x"
+        },
+        "UGL": {
+          "bear_etf": "GLL",
+          "underlying": "Gold",
+          "category": "commodity",
+          "leverage": "2x"
+        },
+        "JNUG": {
+          "bear_etf": "JDST",
+          "underlying": "Junior Gold Miners",
+          "category": "commodity",
+          "leverage": "2x"
+        },
+        "BITU": {
+          "bear_etf": "SBIT",
+          "underlying": "Bitcoin",
+          "category": "crypto",
+          "leverage": "2x"
+        },
+        "ETHT": {
+          "bear_etf": "ETHD",
+          "underlying": "Ethereum",
+          "category": "crypto",
+          "leverage": "2x"
+        },
+        "UCO": {
+          "bear_etf": "SCO",
+          "underlying": "Oil",
+          "category": "commodity",
+          "leverage": "2x"
+        },
+        "BOIL": {
+          "bear_etf": "KOLD",
+          "underlying": "Natural Gas",
+          "category": "commodity",
+          "leverage": "2x"
+        },
+        "BITX": {
+          "bear_etf": "SBIT",
+          "underlying": "Bitcoin Strategy",
+          "category": "crypto",
+          "leverage": "2x"
+        }
+      }
+    },
+    
+    "long_only_symbols": {
+      "description": "Symbols without inverse pairs - long positions only",
+      "symbols": {
+        "DFEN": {
+          "name": "Aerospace & Defense",
+          "leverage": "3x",
+          "category": "sector",
+          "strategy": "Long only"
+        },
+        "WDRW": {
+          "name": "Regional Banks",
+          "leverage": "3x",
+          "category": "sector",
+          "strategy": "Long only"
+        },
+        "SKYU": {
+          "name": "Cloud Computing",
+          "leverage": "2x",
+          "category": "sector",
+          "strategy": "Long only"
+        },
+        "UCYB": {
+          "name": "Cybersecurity",
+          "leverage": "2x",
+          "category": "sector",
+          "strategy": "Long only"
+        },
+        "USD": {
+          "name": "Ultra Semiconductors",
+          "leverage": "2x",
+          "category": "sector",
+          "strategy": "Long only"
+        },
+        "BTGD": {
+          "name": "Bitcoin + Gold (50/50)",
+          "leverage": "1x",
+          "category": "hybrid",
+          "strategy": "Long only"
+        },
+        "UXRP": {
+          "name": "Ultra XRP",
+          "leverage": "2x",
+          "category": "crypto",
+          "strategy": "Long only"
+        }
+      }
+    },
+    
+    "strategy_rules": {
+      "so_entry": {
+        "time": "7:15 AM PT (10:15 AM ET)",
+        "bullish_threshold": "+0.2% above ORB high",
+        "inverse_threshold": "-0.2% below ORB low",
+        "volume_requirement": "GREEN for bullish, RED for inverse",
+        "max_trades_per_day": 1
+      },
+      "orr_entry": {
+        "window": "7:15 AM - 9:15 AM PT (10:15 AM - 12:15 PM ET)",
+        "bullish_pattern": "Was below ORB low → now above ORB high",
+        "inverse_pattern": "Was above ORB high → now below ORB low",
+        "requirement": "First breakout of the day",
+        "max_trades_per_day": 1
+      },
+      "orb_capture": {
+        "period": "6:30 - 6:45 AM PT (9:30 - 9:45 AM ET)",
+        "metrics": ["high", "low", "open", "close", "volume"],
+        "range_calculation": "high - low"
+      },
+      "volume_color": {
+        "candle_period": "7:00 - 7:15 AM PT (10:00 - 10:15 AM ET)",
+        "green_condition": "close > open",
+        "red_condition": "close < open",
+        "neutral_condition": "close = open"
+      }
+    },
+    
+    "statistics": {
+      "3x_pairs": 16,
+      "2x_pairs": 31,
+      "4x_pairs": 1,
+      "total_pairs": 48,
+      "total_symbols_with_inverse": 96,
+      "long_only_symbols": 7,
+      "total_symbols": 103,
+      "coverage": {
+        "index_etfs": "100%",
+        "sector_etfs": "85%",
+        "individual_stocks": "100%",
+        "commodity_bond_etfs": "100%",
+        "crypto_etfs": "75%"
+      }
+    }
+  }
+}
