@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🦜 💼 Token Management Portal - Easy Trading Software</title>
+    <meta name="robots" content="noindex, nofollow">
+    
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #64748b;
+            --success-color: #059669;
+            --warning-color: #d97706;
+            --background-color: #f8fafc;
+            --card-background: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: var(--background-color);
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        /* Animated SVG Background Pattern - Ultima Bot Light Theme */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%233b82f6' viewBox='0 0 16 16'%3E%3Cpath d='M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518z'/%3E%3Cpath d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16'/%3E%3Cpath d='M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11m0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12'/%3E%3C/svg%3E");
+            background-size: 60px 60px;
+            opacity: 0.1;
+            animation: diagonalScroll 2.8s linear infinite;
+            z-index: -1;
+        }
+        
+        @keyframes diagonalScroll {
+            0% { background-position: 0 0; }
+            100% { background-position: 180px 180px; }
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Responsive container width */
+        @media (min-width: 768px) {
+            .container {
+                max-width: 1000px;
+                padding: 20px 40px;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .container {
+                max-width: 900px;
+                padding: 20px 60px;
+            }
+        }
+        
+        @media (min-width: 1440px) {
+            .container {
+                max-width: 800px;
+                padding: 20px 80px;
+            }
+        }
+        
+        @media (min-width: 1920px) {
+            .container {
+                max-width: 700px;
+                padding: 20px 100px;
+            }
+        }
+        
+        .header {
+            background: var(--card-background);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .header h1 {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .header .subtitle {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+        
+        .card {
+            background: var(--card-background);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            margin-bottom: 25px;
+        }
+        
+        .card h2 {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .btn {
+            background: var(--primary-color);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 8px 4px;
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn:hover {
+            background: #1d4ed8;
+            transform: translateY(-1px);
+        }
+        
+        .btn.success {
+            background: var(--success-color);
+        }
+        
+        .btn.success:hover {
+            background: #047857;
+        }
+        
+        .btn.secondary {
+            background: var(--secondary-color);
+        }
+        
+        .btn.secondary:hover {
+            background: #475569;
+        }
+        
+        .btn.warning {
+            background: var(--warning-color);
+        }
+        
+        .btn.warning:hover {
+            background: #b45309;
+        }
+        
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        
+        input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+        
+        .alert {
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        
+        .alert.success {
+            background: #f0fdf4;
+            color: #166534;
+            border: 1px solid #bbf7d0;
+        }
+        
+        .alert.error {
+            background: #fef2f2;
+            color: #991b1b;
+            border: 1px solid #fecaca;
+        }
+        
+        .alert.info {
+            background: #eff6ff;
+            color: #1e40af;
+            border: 1px solid #bfdbfe;
+        }
+        
+        #oauth-status {
+            display: none;
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        
+        .loading-spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f3f4f6;
+            border-top: 3px solid var(--primary-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .token-status {
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin: 5px;
+        }
+        
+        .token-valid {
+            background: #f0fdf4;
+            color: #166534;
+        }
+        
+        .token-expired {
+            background: #fef2f2;
+            color: #991b1b;
+        }
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 767px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .header {
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+            
+            .header h1 {
+                font-size: 1.3rem;
+            }
+            
+            .card {
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+            
+            .btn {
+                width: 100%;
+                margin: 4px 0;
+                padding: 14px 20px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🦜 💼 Token Management Portal</h1>
+            <p class="subtitle">Authorized Access Only</p>
+        </div>
+
+        <!-- Authentication (Simple) -->
+        <div id="auth-card" class="card">
+            <h2>🔑 Access Control</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 15px;">
+                Enter access code to manage tokens
+            </p>
+            <input type="password" id="access-code" placeholder="Enter access code" autofocus>
+            <button class="btn" onclick="authenticate()">Unlock</button>
+        </div>
+
+        <!-- Main Management Interface (Hidden until authenticated) -->
+        <div id="management-interface" style="display: none;">
+            
+            <!-- Token Status -->
+            <div class="card">
+                <h2>📊 Current Status</h2>
+                <div id="status-display">
+                    <span class="token-status token-expired">Production: Loading...</span>
+                    <span class="token-status token-expired">Sandbox: Loading...</span>
+                </div>
+            </div>
+
+            <!-- Token Renewal -->
+            <div class="card">
+                <h2>🔄 Renew OAuth Tokens</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 20px;">
+                    Click to start OAuth flow and renew tokens
+                </p>
+                <button class="btn" onclick="startOAuthFlow('prod')">Renew Production</button>
+                <button class="btn" onclick="startOAuthFlow('sandbox')">Renew Sandbox</button>
+                
+                <div id="oauth-status">
+                    <div id="oauth-message"></div>
+                    <div id="pin-input-container" style="display: none; margin-top: 15px;">
+                        <input type="text" id="pin-input" placeholder="Enter PIN from broker..." maxlength="6">
+                        <button class="btn success" onclick="completeOAuthFlow()">Complete Authorization</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- System Controls -->
+            <div class="card">
+                <h2>⚙️ System Controls</h2>
+                <button class="btn secondary" onclick="testConnection()">Test Connection</button>
+                <button class="btn secondary" onclick="refreshStatus()">Refresh Status</button>
+            </div>
+
+        </div>
+
+        <!-- Alert Container -->
+        <div id="alert-container"></div>
+    </div>
+
+    <script>
+        const API_BASE = 'https://easy-etrade-strategy-oauth-223967598315.us-central1.run.app';
+        const ACCESS_CODE = 'easy2025'; // Simple access control
+        let currentOAuthSession = null;
+
+        function showAlert(message, type) {
+            const container = document.getElementById('alert-container');
+            const alert = document.createElement('div');
+            alert.className = `alert ${type}`;
+            alert.textContent = message;
+            container.appendChild(alert);
+            
+            setTimeout(() => alert.remove(), 5000);
+        }
+
+        function authenticate() {
+            const code = document.getElementById('access-code').value;
+            if (code === ACCESS_CODE) {
+                sessionStorage.setItem('authenticated', 'true');
+                document.getElementById('auth-card').style.display = 'none';
+                document.getElementById('management-interface').style.display = 'block';
+                showAlert('Access granted', 'success');
+                refreshStatus();
+                
+                // Check if we need to auto-start OAuth flow
+                const urlParams = new URLSearchParams(window.location.search);
+                const envParam = urlParams.get('env');
+                if (envParam) {
+                    setTimeout(() => startOAuthFlow(envParam), 500);
+                }
+            } else {
+                showAlert('Invalid access code', 'error');
+            }
+        }
+
+        async function refreshStatus() {
+            try {
+                const response = await fetch(`${API_BASE}/api/secret-manager/status`);
+                
+                if (response.ok) {
+                    const data = await response.json();
+                    
+                    if (data.success) {
+                        const prodValid = data.data.prod && data.data.prod.valid;
+                        const sandboxValid = data.data.sandbox && data.data.sandbox.valid;
+                        
+                        const statusDisplay = document.getElementById('status-display');
+                        statusDisplay.innerHTML = `
+                            <span class="token-status ${prodValid ? 'token-valid' : 'token-expired'}">
+                                Production: ${prodValid ? '✅ Valid' : '❌ Expired'}
+                            </span>
+                            <span class="token-status ${sandboxValid ? 'token-valid' : 'token-expired'}">
+                                Sandbox: ${sandboxValid ? '✅ Valid' : '❌ Expired'}
+                            </span>
+                        `;
+                    }
+                }
+            } catch (error) {
+                showAlert('Failed to refresh status', 'error');
+            }
+        }
+
+        async function startOAuthFlow(environment) {
+            try {
+                const oauthStatus = document.getElementById('oauth-status');
+                const pinContainer = document.getElementById('pin-input-container');
+                
+                // Toggle off if already visible
+                if (pinContainer.style.display === 'block') {
+                    pinContainer.style.display = 'none';
+                    oauthStatus.style.display = 'none';
+                    return;
+                }
+                
+                oauthStatus.style.display = 'block';
+                document.getElementById('oauth-message').innerHTML = 
+                    '<div class="loading-spinner"></div>Starting OAuth flow...';
+                
+                const response = await fetch(`${API_BASE}/oauth/start?env=${environment}`);
+                const data = await response.json();
+                
+                if (!data.success) {
+                    throw new Error(data.error || 'Failed to start OAuth');
+                }
+                
+                currentOAuthSession = data.session_id;
+                
+                document.getElementById('oauth-message').innerHTML = `
+                    <p><strong>Step 1:</strong> Click below to authorize on broker platform</p>
+                    <a href="${data.authorize_url}" target="_blank" class="btn success">
+                        🔗 Open Broker Authorization
+                    </a>
+                    <p style="margin-top: 15px;"><strong>Step 2:</strong> Copy the PIN and enter below</p>
+                `;
+                
+                pinContainer.style.display = 'block';
+                showAlert('OAuth flow started', 'success');
+                
+            } catch (error) {
+                showAlert(`Failed: ${error.message}`, 'error');
+                document.getElementById('oauth-status').style.display = 'none';
+            }
+        }
+
+        async function completeOAuthFlow() {
+            const pin = document.getElementById('pin-input').value.trim();
+            
+            if (!pin) {
+                showAlert('Please enter PIN', 'error');
+                return;
+            }
+
+            if (!currentOAuthSession) {
+                showAlert('No active OAuth session', 'error');
+                return;
+            }
+
+            try {
+                document.getElementById('oauth-message').innerHTML = 
+                    '<div class="loading-spinner"></div>Completing authorization...';
+                
+                const formData = new FormData();
+                formData.append('session_id', currentOAuthSession);
+                formData.append('verifier', pin);
+                
+                const response = await fetch(`${API_BASE}/oauth/verify`, {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const data = await response.json();
+                
+                if (!data.success) {
+                    throw new Error(data.error || 'Failed to complete OAuth');
+                }
+                
+                showAlert('OAuth completed successfully!', 'success');
+                
+                document.getElementById('oauth-status').style.display = 'none';
+                document.getElementById('pin-input').value = '';
+                document.getElementById('pin-input-container').style.display = 'none';
+                currentOAuthSession = null;
+                
+                setTimeout(refreshStatus, 2000);
+                
+            } catch (error) {
+                showAlert(`Failed: ${error.message}`, 'error');
+            }
+        }
+
+        async function testConnection() {
+            try {
+                showAlert('Testing connection...', 'info');
+                
+                const response = await fetch(`${API_BASE}/api/test-access-tokens?env=prod`);
+                const data = await response.json();
+                
+                if (data.success) {
+                    showAlert('Connection successful!', 'success');
+                } else {
+                    showAlert('Connection failed', 'error');
+                }
+            } catch (error) {
+                showAlert(`Test failed: ${error.message}`, 'error');
+            }
+        }
+
+        // Allow Enter key for authentication
+        document.getElementById('access-code')?.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') authenticate();
+        });
+
+        // Auto-start OAuth flow if env parameter is present and authenticated
+        const urlParams = new URLSearchParams(window.location.search);
+        const envParam = urlParams.get('env');
+        
+        // Check for stored auth (simple session)
+        const isAuthenticated = sessionStorage.getItem('authenticated') === 'true';
+        if (isAuthenticated && envParam) {
+            document.getElementById('auth-card').style.display = 'none';
+            document.getElementById('management-interface').style.display = 'block';
+            setTimeout(() => {
+                startOAuthFlow(envParam);
+                refreshStatus();
+            }, 500);
+        }
+    </script>
+</body>
+</html>

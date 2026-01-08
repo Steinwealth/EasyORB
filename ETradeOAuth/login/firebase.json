@@ -1,0 +1,45 @@
+{
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/api/**",
+        "function": "oauth_backend"
+      },
+      {
+        "source": "/oauth/**",
+        "function": "oauth_backend"
+      },
+      {
+        "source": "/cron/**",
+        "function": "oauth_backend"
+      },
+      {
+        "source": "/test-*",
+        "function": "oauth_backend"
+      },
+      {
+        "source": "/status",
+        "function": "oauth_backend"
+      },
+      {
+        "source": "/healthz",
+        "function": "oauth_backend"
+      },
+      {
+        "source": "/keepalive/**",
+        "function": "oauth_backend"
+      }
+    ]
+  },
+  "functions": {
+    "source": "functions",
+    "runtime": "python311"
+  }
+}
+

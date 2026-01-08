@@ -1,0 +1,47 @@
+# Cloud Scheduler Configuration for OAuth Keepalive System
+# This configuration sets up persistent keepalive that runs independently of the web app
+
+# Job 1: Keepalive Production Tokens (every 80 minutes)
+apiVersion: cloudscheduler.googleapis.com/v1
+kind: Job
+metadata:
+  name: oauth-keepalive-prod
+spec:
+  schedule: "*/80 * * * *"  # Every 80 minutes
+  timeZone: "America/New_York"
+  httpTarget:
+    uri: "https://easy-strategy-oauth-backend-763976537415.us-central1.run.app/api/keepalive/force/prod"
+    httpMethod: POST
+    headers:
+      Content-Type: "application/json"
+    body: "{}"
+
+---
+# Job 2: Keepalive Sandbox Tokens (every 80 minutes, offset by 10 minutes)
+apiVersion: cloudscheduler.googleapis.com/v1
+kind: Job
+metadata:
+  name: oauth-keepalive-sandbox
+spec:
+  schedule: "10-90/80 * * * *"  # Every 80 minutes, offset by 10 minutes
+  timeZone: "America/New_York"
+  httpTarget:
+    uri: "https://easy-strategy-oauth-backend-763976537415.us-central1.run.app/api/keepalive/force/sandbox"
+    httpMethod: POST
+    headers:
+      Content-Type: "application/json"
+    body: "{}"
+
+---
+# Job 3: Health Check (every hour)
+apiVersion: cloudscheduler.googleapis.com/v1
+kind: Job
+metadata:
+  name: oauth-health-check
+spec:
+  schedule: "0 * * * *"  # Every hour
+  timeZone: "America/New_York"
+  httpTarget:
+    uri: "https://easy-strategy-oauth-backend-763976537415.us-central1.run.app/healthz"
+    httpMethod: GET
+
