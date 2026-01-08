@@ -1,0 +1,86 @@
+# ========================
+# Easy ORB Strategy
+# ========================
+# Requirements for The Easy ORB Strategy (Rev 00231)
+# Last Updated: January 5, 2026
+
+# === Core runtime ===
+pandas>=2.0.3
+numpy>=1.25.0
+python-dateutil>=2.8.2
+cachetools>=5.3.0
+
+# === HTTP & OAuth ===
+requests>=2.31.0
+requests-oauthlib>=1.3.1
+urllib3>=2.0.4
+cryptography>=41.0.0  # Required for OAuth and Secret Manager
+
+# === Data providers ===
+yfinance>=0.2.28
+polygon-api-client>=1.12.0  # Polygon.io API client (optional, fallback)
+finnhub-python>=2.4.18  # Finnhub API client (optional, for news)
+newsapi-python>=0.2.6  # NewsAPI client (optional, for news)
+
+# === News & Sentiment Analysis ===
+vaderSentiment>=3.3.2  # VADER sentiment analysis
+
+# === Time & Scheduling ===
+pytz>=2023.3  # Timezone handling
+schedule>=1.2.0  # Task scheduling
+holidays>=0.34  # US market holidays
+
+# === Google Cloud Platform ===
+google-cloud-secret-manager>=2.16.4  # Secret Manager (OAuth tokens)
+google-cloud-storage>=2.10.0  # Cloud Storage (data persistence)
+google-cloud-logging>=3.8.0  # Cloud Logging
+google-auth>=2.23.0  # Google Cloud authentication
+
+# === Async / Concurrency ===
+aiohttp>=3.9.1
+tenacity>=8.2.3  # Retries with backoff
+aioredis>=2.0.0  # Async Redis client
+
+# === Performance Optimization ===
+redis>=4.5.0  # Redis caching (optional, falls back to in-memory if not available)
+
+# === Web framework (for Cloud Run HTTP endpoints) ===
+fastapi>=0.104.1  # FastAPI for health endpoints
+uvicorn[standard]>=0.23.2  # ASGI server
+
+# === Configuration ===
+python-dotenv>=1.0.0  # Environment variable loading
+pyyaml>=6.0.0  # YAML configuration files
+
+# === Logging & Monitoring ===
+structlog>=23.1.0  # Structured logging
+
+# === Telegram Integration ===
+python-telegram-bot>=20.7  # Telegram Bot API
+
+# === Deployment helpers ===
+gunicorn>=21.2.0  # WSGI server (for Cloud Run)
+
+# === Testing (optional, for development) ===
+pytest>=7.4.0
+pytest-asyncio>=0.21.1  # Async testing support
+
+# === Notes ===
+# Removed packages not used in ORB Strategy:
+# - scipy: Not used in current codebase
+# - websockets: Not used (Polygon websocket not enabled)
+# - beautifulsoup4/lxml: Not used (Finviz scraping not used)
+# - peewee/pymysql: Not used (no database needed)
+# - pika/aiokafka: Not used (no message queue needed)
+# - click: Not used (argparse used instead)
+# - asyncio-mqtt: Not used
+# - aiomysql: Not used
+# - loguru: Not used (structlog used instead)
+# - prometheus-client: Not used (Cloud Logging used instead)
+# - jupyter/matplotlib/seaborn: Development tools, not needed for production
+# - nltk: Not used (vaderSentiment used instead)
+# - hijri-converter: Not used (US market holidays only)
+# - croniter: Not used (schedule used instead)
+# - flask: Not used (fastapi used instead)
+# - docker: Not needed in requirements (used in deployment)
+# - High-performance dependencies (lz4, zstandard, orjson, msgpack, etc.): Not used, keeping requirements minimal
